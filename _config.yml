@@ -1,0 +1,42 @@
+# Site settings
+title: Shane Daniels
+description: 'Blue, Defense, 1s & 0s, InfoSec Professional'
+url: 'http://pbct3ch.github.io'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Shane Daniels'
+  email: shane.daniels@pbct3ch.com
+  twitter_username: pbct3ch
+  github_username:  pbct3ch
+  linkedin_username:  shane-daniels-22b52456
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
